@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="judu.Function.add"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:judu.Function"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style x:Key="style" TargetType="Image">
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="Height" Value="120"/>
+        </Style>
+    </Page.Resources>
+    <Grid Background="{ThemeResource AppBarBackgroundThemeBrush}">
+        <GridView x:Name="FeedGridView" SelectionMode="Multiple" HorizontalAlignment="Center" IsItemClickEnabled="True" ItemClick="FeedGridView_ItemClick">
+            <Image x:Name="adaymag" Source="ms-appx:///Assets/adaymag.png" Style="{StaticResource style}"/>
+            <Image x:Name="dajia" Source="ms-appx:///Assets/dajia.png" Style="{StaticResource style}"/>
+            <Image x:Name="duxieren"  Source="ms-appx:///Assets/duxieren.png" Style="{StaticResource style}"/>
+            <Image x:Name="ecocn"  Source="ms-appx:///Assets/ecocn.png" Style="{StaticResource style}"/>
+
+            <Image x:Name="ifanr"  Source="ms-appx:///Assets/fanr.png" Style="{StaticResource style}"/>
+            <Image x:Name="geekfan"  Source="ms-appx:///Assets/geekfan.png" Style="{StaticResource style}"/>
+            <Image x:Name="ifeng"  Source="ms-appx:///Assets/ifeng.png" Style="{StaticResource style}"/>
+            <Image x:Name="kr36"  Source="ms-appx:///Assets/kr36.png" Style="{StaticResource style}"/>
+
+            <Image x:Name="msa"   Source="ms-appx:///Assets/msa.png" Style="{StaticResource style}"/>
+            <Image x:Name="appinn"  Source="ms-appx:///Assets/appinn.png" Style="{StaticResource style}"/>
+            <Image x:Name="zhihu"  Source="ms-appx:///Assets/zhihu.png" Style="{StaticResource style}"/>
+            <Image x:Name="yidu"  Source="ms-appx:///Assets/yidu.png" Style="{StaticResource style}"/>
+
+        </GridView>
+        <Button Click="FeedSelect_Confirm" Content="确认" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Width="100" Margin="8" />
+    </Grid>
+</Page>

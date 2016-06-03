@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="judu.Signup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:judu"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="SignupTitle" HorizontalAlignment="Center" Margin="0,59,0,0" TextWrapping="Wrap" Text="用户注册" VerticalAlignment="Top" Height="60" Width="300" FontSize="48" TextAlignment="Center"/>
+        <TextBlock x:Name="SignupUsernameTag" HorizontalAlignment="Center" Margin="0,160,0,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top" Width="350" Height="40" FontSize="24"/>
+        <TextBox x:Name="SignupUsername" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="0,231,0,0" Width="350" Height="40" PlaceholderText="6~18位英文字母、数字或下划线，英文字母开头"/>
+        <TextBlock x:Name="SignupPasswordTag" HorizontalAlignment="Center" Margin="0,291,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="350" Height="40" FontSize="24"/>
+        <PasswordBox x:Name="SignupPassword" HorizontalAlignment="Center" Margin="0,351,0,0" VerticalAlignment="Top" Width="350" Height="40" PlaceholderText="6~12位数字、字母、中划线、下划线，字母开头"/>
+        <TextBlock x:Name="SignupPassword2Tag" HorizontalAlignment="Center" Margin="0,417,0,0" TextWrapping="Wrap" Text="重复密码" VerticalAlignment="Top" Width="350" Height="40" FontSize="24"/>
+        <PasswordBox x:Name="SignupPassword2" HorizontalAlignment="Center" Margin="0,479,0,0"  VerticalAlignment="Top" Width="350" Height="40" PlaceholderText="再次输入密码"/>
+        <Button x:Name="SignupButton" Content="注册" HorizontalAlignment="Center" Margin="0,567,0,0" VerticalAlignment="Top" Width="350" Height="40" Click="SignupButton_Click"/>
+        <Button x:Name="SigninButton" Content="去登录" HorizontalAlignment="Center" Margin="0,636,0,0" VerticalAlignment="Top" Width="350" Height="40" Click="SigninButton_Click"/>
+    </Grid>
+</Page>

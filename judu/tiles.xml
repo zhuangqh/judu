@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<tile>
+  <visual branding="nameAndLogo">
+      
+    <binding template="TileMedium">
+      <text name="title" hint-wrap="true" hint-style="base">Title</text>
+      <text name="date" hint-wrap="true" hint-style="captionSubtle">Date</text>
+      <text name="feedType" hint-wrap="true" hint-style="captionSubtle">feedType</text>
+    </binding> 
+    
+    <binding template="TileWide">
+      <text name="title" hint-wrap="true" hint-style="base">Title</text>
+      <text name="date" hint-wrap="true" hint-style="captionSubtle">Date</text>
+      <text name="feedType" hint-wrap="true" hint-style="captionSubtle">feedType</text>
+    </binding>
+
+    <binding template="TileLarge">
+      <text name="title" hint-wrap="true" hint-style="base">Title</text>
+      <text name="date" hint-wrap="true" hint-style="captionSubtle">Date</text>
+      <text name="feedType" hint-wrap="true" hint-style="captionSubtle">feedType</text>
+    </binding> 
+  
+  </visual>
+</tile>

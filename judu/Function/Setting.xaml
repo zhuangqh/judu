@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="judu.Function.Setting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:judu.Function"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Light">
+
+    <Grid Background="{ThemeResource AppBarBackgroundThemeBrush}">
+        <Pivot x:Name="setting" Title="设置">
+            <PivotItem Header="通用" Margin="14,0,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <ToggleSwitch x:Name="toggleSwitch" Header="夜间模式" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Toggled="Toggled"/>
+                    <Button Grid.Row="1" Content="退出当前账户" VerticalAlignment="Bottom" Width="140" Height="40" BorderThickness="4">
+                        <Button.Flyout>
+                            <Flyout x:Name="myFlyout">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Text="退出后将无法同步设置到云端" FontSize="20" HorizontalAlignment="Center"/>
+                                    <Button x:Name="LogoutButton" Grid.Row="1" Content="确认" Click="LogoutButton_Click" HorizontalAlignment="Center"></Button>
+                                </Grid>
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="关于">
+                <StackPanel>
+                    <TextBlock Text="聚读" FontSize="24" FontWeight="Bold" Margin="4, 0, 0, 12"/>
+                    <TextBlock Text="开发者信息" FontSize="20"/>
+                    <Image Source="ms-appx:///Assets/Developer.png" MaxWidth="300" Margin="20" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Version: 1.0.0 All Rights Reserved " FontSize="20" HorizontalAlignment="Left"/>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
