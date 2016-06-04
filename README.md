@@ -1,18 +1,25 @@
 # judu
+A RSS reader
 
+## Screenshot
 
-## **TODO**
+![](doc/img/1.jpg)
+![](doc/img/2.jpg)
+![](doc/img/3.jpg)
+![](doc/img/4.jpg)
+
+## Feature
 ---
-1. 动态磁帖（完成)
+1. 动态磁帖
 >   动态磁贴显示类似ListItem的那些数据
 >   1. 标题
 >   2. 日期: 月/日
 >   3. 摘要
 
-2. 分享功能 (完成)
+2. 分享功能
 >   分享的数据是ListItem
 
-3. 侧边菜单栏 (完成)
+3. 侧边菜单栏
   - 首页
   - 各个消息源
   - 设置
@@ -22,7 +29,7 @@
 6. 保存数据（服务端+客户端)
 7. 程序性修改消息源
 8. 夜间模式及“关于我们”
-9. Logo设计（选）
+9. Logo设计
 
     
 ## Server side API
@@ -45,7 +52,7 @@
     - Return Type: HTML
 
 
-## Server Setup （给加成)
+## Server Setup
 ---
 1. Download and install nodejs v6.0.0 from https://nodejs.org/en/
 2. Under the directory 'server', run
